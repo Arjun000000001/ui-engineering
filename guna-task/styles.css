@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0c0c0c, #050505 80%);
+  color: #fff;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.divider {
+  width: 80px;
+  height: 2px;
+  background: #ff7a00;
+  margin: 10px auto;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.card {
+  flex: 1;
+  background: linear-gradient(145deg, #0f0f0f, #070707);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 20px rgba(255, 120, 0, 0.08);
+}
+
+.card img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.price {
+  color: #ff7a00;
+  font-weight: 600;
+}
+
+/* BADGES */
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 12px;
+  background: rgba(255, 120, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #ff7a00;
+}
+
+.badge.new {
+  right: 15px;
+  left: auto;
+}
+
+/* HIGHLIGHT CARD */
+.highlight {
+  border: 1px solid #ff7a00;
+  box-shadow: 0 0 25px rgba(255, 120, 0, 0.4);
+}
+
+/* CHEF SECTION */
+.chef {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 40px;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #0d0d0d, #050505);
+  box-shadow: 0 0 30px rgba(255, 120, 0, 0.1);
+}
+
+.chef-img img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.chef-text span {
+  color: #ff7a00;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.chef-text h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.chef-text p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.chef-text button {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 1px solid #ff7a00;
+  background: transparent;
+  color: #ff7a00;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #777;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.social span {
+  margin-left: 10px;
+  border: 1px solid #ff7a00;
+  padding: 5px 8px;
+  border-radius: 50%;
+  color: #ff7a00;
+}
