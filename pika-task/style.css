@@ -1,0 +1,245 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  width:100%;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f3f3f3;
+  padding:15px;
+  overflow:hidden;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+  width:100%;
+  max-width:1280px;
+  height:90vh;
+  max-height:780px;
+  border-radius:34px;
+  overflow:hidden;
+  position:relative;
+  display:flex;
+  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* LEFT PANEL */
+
+.left{
+  width:61%;
+  height:100%;
+  background:#f7c800;
+  position:relative;
+  padding:40px 60px;
+  overflow:hidden;
+}
+
+/* RIGHT PANEL */
+
+.right{
+  width:39%;
+  height:100%;
+  background:#f2e5b8;
+  position:relative;
+}
+
+/* LOGO */
+
+.logo{
+  width:150px;
+  position:absolute;
+  top:35px;
+  left:40px;
+}
+
+/* CONTENT */
+
+.content{
+  position:absolute;
+  top:180px;
+  left:60px;
+  z-index:5;
+}
+
+.mini-title{
+  letter-spacing:8px;
+  font-size:16px;
+  font-weight:700;
+  color:#111;
+  margin-bottom:20px;
+}
+
+.title{
+  font-size:95px;
+  line-height:0.9;
+  font-weight:900;
+  color:#000;
+  margin-bottom:30px;
+  letter-spacing:-4px;
+}
+
+.desc{
+  width:420px;
+  font-size:20px;
+  line-height:1.5;
+  color:#111;
+  font-weight:500;
+}
+
+/* COUNT */
+
+.count{
+  position:absolute;
+  left:60px;
+  bottom:70px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  color:#111;
+  font-weight:700;
+  font-size:20px;
+}
+
+.count .line{
+  width:40px;
+  height:3px;
+  background:#111;
+}
+
+/* POKEBALL */
+
+.pokeball{
+  position:absolute;
+  width:220px;
+  height:220px;
+  border:18px solid rgba(0,0,0,0.08);
+  border-radius:50%;
+  bottom:-30px;
+  left:25px;
+}
+
+.pokeball::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:18px;
+  background:rgba(0,0,0,0.08);
+  top:50%;
+  left:0;
+  transform:translateY(-50%);
+}
+
+.pokeball::after{
+  content:"";
+  position:absolute;
+  width:60px;
+  height:60px;
+  border:14px solid rgba(0,0,0,0.08);
+  border-radius:50%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+/* PIKACHU IMAGE */
+
+.pikachu{
+  position:absolute;
+  width:560px;
+  right:70px;
+  top:140px;
+  z-index:2;
+  filter:drop-shadow(0 10px 15px rgba(0,0,0,0.08));
+}
+
+/* MENU */
+
+.menu{
+  position:absolute;
+  top:35px;
+  right:40px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  z-index:10;
+}
+
+.menu span{
+  width:42px;
+  height:4px;
+  background:#111;
+  border-radius:10px;
+}
+
+/* DOTS */
+
+.dots{
+  position:absolute;
+  right:28px;
+  top:50%;
+  transform:translateY(-50%);
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  z-index:10;
+}
+
+.dots span{
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  background:#f4c400;
+}
+
+.dots span.active{
+  background:#000;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+  .container{
+    height:auto;
+    flex-direction:column;
+  }
+
+  .left,
+  .right{
+    width:100%;
+  }
+
+  .left{
+    min-height:700px;
+  }
+
+  .right{
+    min-height:300px;
+  }
+
+  .pikachu{
+  position:absolute;
+  width:560px;
+  top:140px;
+  left:20%;
+  transform:translate(-50%,-50%);
+  z-index:2;
+  filter:drop-shadow(0 10px 15px rgba(0,0,0,0.08));
+}
+
+  .title{
+    font-size:72px;
+  }
+
+  .desc{
+    width:90%;
+    font-size:18px;
+  }
+}
